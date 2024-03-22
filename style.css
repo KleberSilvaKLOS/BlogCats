@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-base-white: hsl(0, 0%, 100%)ff;
+  --color-base-blue: hsl(195, 91%, 25%);
+  --color-base-blue2: hsl(195, 46%, 40%);
+  --color-base-gray: hsl(196, 100%, 98%);
+  --color-base-black: hsl(240, 5%, 7%);
+}
+
+.app {
+  display: grid;
+
+  height: 100vh;
+
+  grid-template-areas: 
+  "A "
+  "B "
+  "D ";
+
+}
+
+.app header {
+  grid-area: A;
+  
+}
+
+.app .part_one {
+  grid-area: B;
+
+}
+
+.app .part_one {
+  grid-area: C;
+  
+}
+
+.app footer {
+  grid-area: D;
+}
+
+body, .part_one, .part_two, .app {
+  font-family: 'Mulish', sans-serif;
+}
+
+
+ header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+
+  margin-bottom: 4.4rem;
+  
+  background-color: var(--color-base-blue);
+
+  
+}
+
+
+.text_one{ 
+  font-size: 2.0rem;
+  margin-top: 1.6rem;
+}
+
+.input-wrapper input {
+  padding: 1.0rem;
+
+  border: 0;
+  border-radius: .6rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  
+  width: 1137px;
+  /* min-width: 800px; */
+  flex-shrink: 0;
+}
+
+.pata {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  
+  margin-right: 2.5rem;
+
+  gap: 10rem;
+
+  border-radius: 9999px;
+  background: #F4FCFF
+  
+}
+
+.avatar {
+  border-radius: 10rem;
+  width: 4.2rem;
+
+  left: 150px;
+
+  flex-shrink: 0;
+
+  margin: 1.0rem; 
+
+  /* width: 42px; */
+  height: 42px;
+  flex-shrink: 0;
+}
+
+main {
+  gap: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center
+}
+
+main, a {
+  display: flex;
+}
+
+
+
+.part_one {
+  background-color:  var(--color-base-white);
+  /* margin-left: 12.0rem; */
+} 
+
+.part_one .cat {
+  width: 803px;  
+  height: 405px; 
+  flex-shrink: 0;
+}
+
+.part_one p {
+  width: 800px;
+
+  color: var(--Platform-Aliases-Background, #121214);
+  font-family: Mulish;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; 
+
+  margin-bottom: 3.0rem;
+
+} 
+
+.part_two {
+  text-shadow: -0.2rem 0.3rem 0.2em rgb(194, 194, 194);
+
+  margin: 0 0 0 3.4rem;
+  height: 799px;
+  display: flex;
+  min-width: 400px;
+
+}
+
+figure {
+  display: grid;
+  margin-bottom: 4.0rem;
+
+  grid-template-areas: "F E";
+
+  gap: 3.0rem;
+
+}
+
+.jpg{ 
+  
+  grid-area: F;
+}
+
+.details {
+
+  grid-area: E;
+  /* border: 1px solid red; */
+  width: 200px;
+
+}
+
+#Text1 {
+  
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.9rem;
+  margin-top: auto;
+  padding-top: -100px;
+}
+
+h2, p {
+  color: black;
+}
+
+.details h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
+}
+
+.details p {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  padding: 16px;
+  gap: 10px;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+  background-color: #387E96;
+  
+}
+
+footer p{
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* @media screen and (max-width: 768px) {
+  Estilos para telas com largura máxima de 768px
+  .app {
+    grid-template-areas: 
+      "A"
+      "B"
+      "D";
+  }
+
+  .part_two {
+    margin: 0;
+  }
+
+} */
+
+
+@media screen and (max-width: 768px){
+  .input-wrapper input {
+    width: 30px;
+    
+   }
+}
+
+/* TENTEI FAZER O @MEDIA, MAS NÃO CONSEGUIIIIII */
